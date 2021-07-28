@@ -32,7 +32,7 @@ export default class Calculator extends Component {
 
     setOperation(operation) { 
 
-        if (this.state.current === 0) { //Mudando o current para salvar a entrada em this.state.value[1]
+        if (this.state.current === 0) { //Changing current to save the entry in this.state.value[1]
             this.setState({ operation, current: 1, clearDisplay: true });
         } else { //If !current we can do the math operation.
             const equals = operation === '=';
@@ -50,7 +50,7 @@ export default class Calculator extends Component {
                         values[0] -= values[1];
                         break;
                     case "*":
-                        values[0] *= values[1];
+                        values[0] *= values[1].toFixed(PRECISION);
                         break;
                     case "/":
                         values[0] = (values[0] / values[1]).toFixed(PRECISION);
