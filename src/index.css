@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Fira Sans Thin";
+    src: url('./fonts/FiraSans-Thin.ttf');
+}
+
+* {
+    font-family: 'Fira Sans Thin', monospace;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #403b4a, #e7e9bb);
+}
